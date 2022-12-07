@@ -412,3 +412,18 @@ header {
   transition: transform 0.5s ease-in-out;
   transform: translateX(0);
 }
+
+@media screen and (max-width: 810px) {
+  #nonDisplayable {
+    display: none;
+  }
+  #middleBox {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #middleBox {
+    width: 60%;
+  }
+}
