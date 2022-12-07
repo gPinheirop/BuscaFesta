@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Busca Festa</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,25 +15,177 @@
       @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
     </style>
     <link rel="stylesheet" href="style.css" />
+    <script src="carrossel.js" defer></script>
   </head>
   <body>
     <header>
       <div>
-        <a href="/" class="logo"
-          ><img src="assets/images/logo1.png" alt=""
+        <a href="#" class="logo"
+          ><img src="../assets/images/logo1.png" alt="logo Busca Festa"
         /></a>
       </div>
       <ul id="navbar">
         <li class="navItem"><a href="#" class="navText">Festas</a></li>
-        <li class="navItem"><a href="#" class="navText">Ranking</a></li>
-        <li class="navItem"><a href="#" class="navText">Login</a></li>
+        <li class="navItem">
+          <a href="/RankingPage" class="navText">Ranking</a>
+        </li>
+        <li class="navItem">
+          <a href="/FeedbacksPage" class="navText">Feedbacks</a>
+        </li>
       </ul>
     </header>
     <div id="headerBlueBlock"></div>
     <main>
       <section id="MainContent">
-        <div id="background"></div>
+        <div id="TitleAndGames">
+          <div>
+            <h1 id="MainTitle">
+              Venha fazer parte dessa <strong id="party"> <br />Festa</strong>
+            </h1>
+            <p id="MainDescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+              ullam aspernatur?
+            </p>
+          </div>
+          <div id="gamePicture">
+            <img src="../assets/images/jogo.png" alt="paises confronto copa" />
+          </div>
+        </div>
+      </section>
+      <section id="partyExamples">
+        <div class="carrossel">
+          <div class="container" id="img">
+            <img
+              src="../assets/images/botecoFestaC.png"
+              alt=" Festa no boteco"
+            />
+            <img src="../assets/images/olodumC.png" alt="Festa com olodum" />
+            <img src="../assets/images/festaBarC.png" alt="Festa bar" />
+          </div>
+        </div>
+        <div id="partiesInfoBox">
+          <div class="partiesInfoBody">
+            <p class="partiesInfos">Pelourinho</p>
+            <p class="partiesInfos">12:00</p>
+            <p class="partiesInfos">200/300</p>
+            <img
+              src="../assets/images/blueStars.png"
+              alt="avaliação 5/6"
+              class="partiesInfos"
+            />
+          </div>
+          <div class="partiesInfoBottom"></div>
+        </div>
+      </section>
+      <section id="ranking">
+        <div class="subtitleContainer">
+          <div class="titleBar"></div>
+          <h2 class="subtitle">TOP 3 FESTAS</h2>
+          <div class="titleBar"></div>
+        </div>
+        <div id="partyContainer">
+          <div class="partyBox">
+            <div class="imageBox">
+              <div id="image1"></div>
+              <div class="line"></div>
+            </div>
+            <div class="infoBox">
+              <div class="location">
+                <p>Pelourinho</p>
+                <img src="../assets/images/location.png" alt="location pin" />
+              </div>
+              <p>12:00</p>
+              <p>200/300</p>
+              <img src="../assets/images/blueStars.png" alt="score 5/6" />
+            </div>
+          </div>
+          <div class="partyBox" id="middleBox">
+            <div class="imageBox">
+              <div id="image2"></div>
+              <div class="line" id="middleLine"></div>
+            </div>
+            <div>
+              <div class="location">
+                <p>Campo Grande</p>
+                <img src="../assets/images/location.png" alt="location pin" />
+              </div>
+              <p>12:00</p>
+              <p>60/100</p>
+              <img src="../assets/images/yellowStars.png" alt="score 5/6" />
+            </div>
+          </div>
+          <div class="partyBox">
+            <div class="imageBox">
+              <div id="image3"></div>
+              <div class="line"></div>
+            </div>
+            <div>
+              <div class="location">
+                <p>Baixa do sapateiro</p>
+                <img src="../assets/images/location.png" alt="location pin" />
+              </div>
+              <p>12:00</p>
+              <p>42/80</p>
+              <img src="../assets/images/blueStars.png" alt="score 5/6" />
+            </div>
+          </div>
+        </div>
+        <a href="#ranking" id="moreInfo">Mais Festas</a>
+      </section>
+      <section id="feedback">
+        <div class="subtitleContainer">
+          <div class="titleBar"></div>
+          <h2 class="subtitle">FEEDBACKS</h2>
+          <div class="titleBar"></div>
+        </div>
+        <div id="feedbackBackground">
+          <div id="feedbackContainer">
+            <img src="../assets/images/user.png" alt="user photo" />
+            <img
+              src="../assets/images/blueStars.png"
+              alt="score 5/6"
+              id="score"
+            />
+            <div id="textContainer">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolore, possimus quae minima repellat omnis error ut, nesciunt,
+                ea nostrum aliquam reiciendis porro libero! Consequatur
+                cupiditate dicta autem quae at natus!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              </p>
+            </div>
+          </div>
+          <div id="feedbackBottomLine"></div>
+        </div>
       </section>
     </main>
+
+    <footer id="footer">
+      <div class="footerlogo">
+        <img src="../assets/images/logo2.png" alt="logoBuscaFesta" />
+      </div>
+      <div>
+        <h4>BuscaFestaLTDA</h4>
+        <h4>cnpj:xxxx-xxxx-xx</h4>
+      </div>
+      <div>
+        <h4>Contato 1: 4002-8922</h4>
+        <h4>Contato 2: 4002-8924</h4>
+      </div>
+      <p>@BuscaFesta</p>
+      <div class="socialImages">
+        <a href="#"
+          ><img src="../assets/images/facebook.png" alt="Facebook"
+        /></a>
+        <a href="#"
+          ><img src="../assets/images/instagram.png" alt="Instagram"
+        /></a>
+        <a href="#"><img src="../assets/images/discord.png" alt="Discord" /></a>
+      </div>
+      <p>BuscaFesta@email.com</p>
+    </footer>
   </body>
 </html>

@@ -142,18 +142,14 @@ header {
   height: 108px;
 }
 
-.logo {
-  padding-left: 52px;
-}
-
 #navbar {
   display: flex;
-
+  justify-content: space-around;
   margin-right: 52px;
 }
 
 .navItem {
-  padding: 0px 22.5px 0px 22.5px;
+  padding: 0 0 0 12%;
 }
 
 .navText {
@@ -173,11 +169,246 @@ header {
 /* mainContent */
 #MainContent {
   margin-top: 30px;
-  /* background-color: #02020a; */
-  background-color: red;
+  background-color: #02020a;
   height: 547px;
-  background-image: url(assets/images/group7.png);
-  background-position: center;
+  background-image: url(../assets/images/confetti.png);
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: cover;
+  padding-bottom: 30px;
+}
+
+#TitleAndGames {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#MainTitle {
+  font-size: 40pt;
+  color: #daffed;
+}
+
+#party {
+  font-weight: bold;
+  color: #0a91ab;
+}
+
+#MainDescription {
+  font-size: 20pt;
+  color: #daffed;
+}
+
+#gamePicture {
+  width: 30%;
+}
+
+#partyExamples {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#parties {
+  width: 577px;
+  height: 292px;
+  background-color: coral;
+}
+
+#partiesInfoBox {
+  width: 576px;
+}
+
+.partiesInfoBody {
+  height: 282px;
+  background-color: #ffc045;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.partiesInfos {
+  margin-left: 8%;
+  font-size: clamp(1.2em, 1em + 3vw, 3vw);
+}
+
+.partiesInfoBottom {
+  height: 10px;
+  background-color: #0a91ab;
+}
+
+#footer {
+  height: 400px;
+  background-color: #0a91ab;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.socialImages {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* ranking */
+#ranking {
+  padding-top: 70px;
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleBar {
+  height: 8px;
+  width: 40px;
+  background-color: #0a91ab;
+  margin: 0 20px;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: clamp(1.9em, 1em + 2vw, 1.5em);
+  color: #ffc045;
+}
+
+#partyContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  margin-bottom: 42px;
+}
+
+.partyBox {
+  height: 459px;
+  width: 25%;
+  background-color: #ffc045;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.line {
+  height: 8px;
+  width: 90%;
+  margin: 3px 0;
+  background-color: #0a91ab;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#middleBox {
+  background-color: #0a91ab;
+}
+
+.imageBox {
+  height: 207px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#middleLine {
+  background-color: #ffc045;
+}
+
+#image1 {
+  height: 199px;
+  width: 90%;
+  background: url(../assets/images/olodum2.png);
+}
+
+#image2 {
+  height: 199px;
+  width: 90%;
+  background: url(../assets/images/festaBar1.png);
+}
+
+#image3 {
+  height: 199px;
+  width: 90%;
+  background: url(../assets/images/botecoFesta1.png);
+}
+
+#moreInfo {
+  padding: 10px 40px;
+  background-color: #ffc045;
+  font-weight: bold;
+  color: #02020a;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#moreInfo:hover {
+  color: #02020a86;
+}
+/* feedback */
+#feedbackBackground {
+  background-color: #02020a;
+  margin-top: 71px;
+  height: 547px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#feedbackContainer {
+  width: 80%;
+  height: 447px;
+  background-color: #ffc045;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#textContainer {
+  width: 60%;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#score {
+  margin: 10px 0;
+}
+
+#feedbackBottomLine {
+  width: 100;
+  height: 15px;
+  background-color: #0a91ab;
+}
+
+.carrossel {
+  box-shadow: 2px 2px 4px black;
+  overflow: hidden;
+  height: 292px;
+  width: 577px;
+}
+.container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
 }
